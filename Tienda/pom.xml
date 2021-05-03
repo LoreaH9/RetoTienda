@@ -8,7 +8,11 @@
 		<version>2.4.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+<<<<<<< HEAD
+	<groupId>com.example</groupId>
+=======
 	<groupId>com.example.demo</groupId>
+>>>>>>> branch 'master' of https://github.com/LoreaH9/RetoTienda.git
 	<artifactId>Tienda</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Tienda</name>
