@@ -1,5 +1,4 @@
 package com.example.model;
-
 public class Producto {
 	private int id;
 	private String name;
@@ -8,7 +7,8 @@ public class Producto {
 	private int stock;
 	private int like;
 	private String description;
-	
+
+
 	public Producto(int id, String name, String tipo, double precio, int stock, int like, String description) {
 		super();
 		this.id = id;
@@ -19,12 +19,14 @@ public class Producto {
 		this.like = like;
 		this.description = description;
 	}
-	
+
+
 	@Override
 	public String toString() {
 		return "Producto [id=" + id + ", name=" + name + ", tipo=" + tipo + ", precio=" + precio + ", stock=" + stock
 				+ ", like=" + like + ", description=" + description + "]";
 	}
+
 
 	public int getId() {
 		return id;
@@ -68,6 +70,6 @@ public class Producto {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	
-	
+
+
 }

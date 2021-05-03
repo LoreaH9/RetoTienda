@@ -4,22 +4,20 @@ public class Imagen {
 	private int id;
 	private String img;
 	private int id_producto;
-	
-	
-	
+
 	public Imagen(int id, String img, int id_producto) {
 		super();
 		this.id = id;
 		this.img = img;
 		this.id_producto = id_producto;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "Imagen [id=" + id + ", img=" + img + ", id_producto=" + id_producto + "]";
 	}
-	
-	
+
+
 	public int getId() {
 		return id;
 	}
@@ -38,6 +36,6 @@ public class Imagen {
 	public void setId_producto(int id_producto) {
 		this.id_producto = id_producto;
 	}
-	
-	
+
+
 }
