@@ -5,6 +5,8 @@ public class Imagen {
 	private String img;
 	private int id_producto;
 	
+	
+	
 	public Imagen(int id, String img, int id_producto) {
 		super();
 		this.id = id;
