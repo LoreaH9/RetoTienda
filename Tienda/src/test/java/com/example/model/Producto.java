@@ -18,6 +18,7 @@ public class Producto {
 		this.precio = precio;
 		this.stock = stock;
 		this.like = like;
+		
 		this.description = description;
 	}
 	
