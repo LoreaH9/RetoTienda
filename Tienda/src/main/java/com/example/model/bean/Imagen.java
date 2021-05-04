@@ -1,4 +1,4 @@
-package com.example.model;
+package com.example.model.bean;
 
 public class Imagen {
 	private int id;
