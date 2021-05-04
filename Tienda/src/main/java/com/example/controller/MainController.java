@@ -2,15 +2,12 @@ package com.example.controller;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import com.example.model.dao.ModeloImagen;
-import com.example.model.dao.ModeloProducto;
+import com.example.model.dao.*;
 
 @Controller
 public class MainController {
@@ -20,22 +17,22 @@ public class MainController {
 	
 	@Autowired
 	ModeloProducto mp;
-	ModeloImagen mi;
+
 	
 	@RequestMapping(value="/")
 	public String index(Model datamap) {
 		datamap.addAttribute("datetime", getDatetime());
-		return ("ropa");		
+		return "ropa";		
 	}
 	
 	@RequestMapping(value="/lookbook")
 	public String lookbook(Model datamap) {
-		return ("lookbook");		
+		return "lookbook";		
 	}
 	
 	@RequestMapping(value="/ropa")
 	public String ropa(Model ropa) {
-		return ("ropa");		
+		return "ropa";		
 	}
 	
 	private String getDatetime() {
