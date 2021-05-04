@@ -22,22 +22,20 @@ public class MainController {
 	ModeloProducto mp;
 	ModeloImagen mi;
 	
-	@RequestMapping("/")
+	@RequestMapping(value="/")
 	public String index(Model datamap) {
 		datamap.addAttribute("datetime", getDatetime());
-		return ("index");		
+		return ("ropa");		
 	}
 	
-	@RequestMapping("/lookbook")
+	@RequestMapping(value="/lookbook")
 	public String lookbook(Model datamap) {
-		datamap.addAttribute("datetime", getDatetime());
-		return ("index");		
+		return ("lookbook");		
 	}
 	
-	@RequestMapping("/ropa")
-	public String ropa(Model datamap) {
-		datamap.addAttribute("datetime", getDatetime());
-		return ("index");		
+	@RequestMapping(value="/ropa")
+	public String ropa(Model ropa) {
+		return ("ropa");		
 	}
 	
 	private String getDatetime() {
