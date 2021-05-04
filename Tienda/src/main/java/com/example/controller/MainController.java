@@ -28,7 +28,7 @@ public class MainController {
 		return ("index");		
 	}
 	
-	@RequestMapping("/")
+	@RequestMapping("/lookbook")
 	public String lookbook(Model datamap) {
 		datamap.addAttribute("datetime", getDatetime());
 		return ("index");		
