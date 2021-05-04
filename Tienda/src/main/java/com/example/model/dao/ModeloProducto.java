@@ -16,8 +16,8 @@ public class ModeloProducto {
 	ModeloProducto mp;
 	
 	public ModeloProducto(){
-		
 	}
+	
 	public ModeloProducto(JdbcTemplate db) {
 		this.db=db;
 	}

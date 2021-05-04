@@ -9,13 +9,18 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.example.model.dao.ModeloImagen;
+import com.example.model.dao.ModeloProducto;
+
 @Controller
 public class MainController {
 	
 	@Autowired
 	JdbcTemplate db;
 	
-	
+	@Autowired
+	ModeloProducto mp;
+	ModeloImagen mi;
 	
 	@RequestMapping("/")
 	public String hola(Model datamap) {
