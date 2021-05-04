@@ -23,7 +23,19 @@ public class MainController {
 	ModeloImagen mi;
 	
 	@RequestMapping("/")
-	public String hola(Model datamap) {
+	public String index(Model datamap) {
+		datamap.addAttribute("datetime", getDatetime());
+		return ("index");		
+	}
+	
+	@RequestMapping("/")
+	public String lookbook(Model datamap) {
+		datamap.addAttribute("datetime", getDatetime());
+		return ("index");		
+	}
+	
+	@RequestMapping("/ropa")
+	public String ropa(Model datamap) {
 		datamap.addAttribute("datetime", getDatetime());
 		return ("index");		
 	}
