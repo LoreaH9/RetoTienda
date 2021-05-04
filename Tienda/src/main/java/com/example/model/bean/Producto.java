@@ -2,32 +2,34 @@ package com.example.model.bean;
 public class Producto {
 	private int id;
 	private String name;
-	private String tipo;
+	private int cod_cat;
 	private double precio;
 	private int stock;
 	private int like;
 	private String description;
 
-
-	public Producto(int id, String name, String tipo, double precio, int stock, int like, String description) {
+	public Producto(int id, String name, int cod_cat, double precio, int stock, int like, String description) {
 		super();
 		this.id = id;
 		this.name = name;
-		this.tipo = tipo;
+		this.cod_cat = cod_cat;
 		this.precio = precio;
 		this.stock = stock;
 		this.like = like;
 		this.description = description;
 	}
-
-
+	
 	@Override
 	public String toString() {
-		return "Producto [id=" + id + ", name=" + name + ", tipo=" + tipo + ", precio=" + precio + ", stock=" + stock
-				+ ", like=" + like + ", description=" + description + "]";
+		return "Producto [id=" + id + ", name=" + name + ", cod_cat=" + cod_cat + ", precio=" + precio + ", stock="
+				+ stock + ", like=" + like + ", description=" + description + "]";
 	}
-
-
+	public int getCod_cat() {
+		return cod_cat;
+	}
+	public void setCod_cat(int cod_cat) {
+		this.cod_cat = cod_cat;
+	}
 	public int getId() {
 		return id;
 	}
@@ -40,12 +42,7 @@ public class Producto {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getTipo() {
-		return tipo;
-	}
-	public void setTipo(String tipo) {
-		this.tipo = tipo;
-	}
+
 	public double getPrecio() {
 		return precio;
 	}
